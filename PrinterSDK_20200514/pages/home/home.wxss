@@ -1,0 +1,14 @@
+
+.button {
+  margin-top: 20px;
+  width: 90%;
+  background-color: #54bec2;
+  color: white;
+  border-radius: 98rpx;
+  background: bg_red;
+}
+ 
+/* 按下变颜色 */
+.hover {
+  background:  #DCDCDC;
+}

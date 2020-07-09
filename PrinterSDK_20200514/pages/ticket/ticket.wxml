@@ -1,0 +1,14 @@
+<!--blecontrol.wxml-->
+<view class="body">
+
+
+  		<button class='button'  hover-class="hover" bindtap='receiptTest' loading='{{isReceiptSend}}' disabled='{{isReceiptSend}}'>彩票单据</button>
+      	<button class='button'  hover-class="hover" bindtap='checkTake' loading='{{isCheckTake}}' disabled='{{isCheck}}'>纸张取走</button>
+        	<button class='button'  hover-class="hover" bindtap='queryStatus' loading='{{isQuery}}' disabled='{{isQuery}}'>查询状态</button>
+	<picker style='margin:20px' mode='selector' range='{{buffSize}}' value='{{buffIndex}}' bindchange='buffBindChange'>当前每次发送字节数为(点击可更换)：{{buffSize[buffIndex]}}
+	</picker>
+
+	<picker style='margin:20px' mode='selector' range='{{printNum}}' value='{{printNumIndex}}' bindchange='printNumBindChange'>当前打印份数(点击可更换)：{{printNum[printNumIndex]}}
+	</picker>
+
+</view>

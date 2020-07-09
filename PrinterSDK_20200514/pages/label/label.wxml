@@ -1,0 +1,15 @@
+<view class="body">
+  		<button class='button'  hover-class="hover" bindtap='labelTest' loading='{{isLabelSend}}' disabled='{{isLabelSend}}'>标签案例</button>
+        	<button  class='button'  hover-class="hover" bindtap='queryStatus' loading='{{isQuery}}' disabled='{{isQuery}}'>查询状态</button>
+         <button class='button'  hover-class="hover" bindtap='printPhoto' >打印图片</button>
+          		<canvas canvas-id="canvasOut" class="canvas"  style='border:0px solid; width:{{canvasWidth}}px; height:{{canvasHeight}}px'></canvas>
+
+           <button class='button'  hover-class="hover" bindtap='printJPGPhoto' >打印彩图</button>
+           <canvas canvas-id="canvasJPG" class="canvas" style='border:0px solid; width:{{jpgWidth}}px; height:{{jpgHeight}}px'></canvas>  
+	<picker style='margin:20px' mode='selector' range='{{buffSize}}' value='{{buffIndex}}' bindchange='buffBindChange'>当前每次发送字节数为(点击可更换)：{{buffSize[buffIndex]}}
+	</picker>
+
+	<picker style='margin:20px' mode='selector' range='{{printNum}}' value='{{printNumIndex}}' bindchange='printNumBindChange'>当前打印份数(点击可更换)：{{printNum[printNumIndex]}}
+	</picker>
+
+</view>

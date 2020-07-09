@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/bleConnect/bleConnect",
+    "pages/sendCommand/sendCommand",
+    "pages/net/net",
+    "pages/ticket/ticket",
+    "pages/receipt/receipt",
+    "pages/label/label"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#54bec2",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+    
+  },
+  "sitemapLocation": "sitemap.json"
+}

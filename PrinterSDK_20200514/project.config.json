@@ -1,0 +1,102 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": false,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.11.0",
+	"projectname": "NetTools",
+	"isGameTourist": false,
+	"appid": "wx5107c6587d0d93b2",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "send",
+					"pathName": "pages/sendCommand/sendCommand",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/net/net",
+					"pathName": "pages/net/net",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "bleConnect",
+					"pathName": "pages/bleConnect/bleConnect",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages /home/home",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages /ticket/ticket",
+					"pathName": "pages/ticket/ticket",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages /receipt/receipt",
+					"pathName": "pages/receipt/receipt",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages /label/label",
+					"pathName": "pages/label/label",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,16 @@
+<button class='button'  hover-class="hover" bindtap="startSearch" loading='{{isScanning}}'> 搜索蓝牙设备 </button>
+<text class=".td">（Android8.0+系统需开启定位）</text> 
+<scroll-view class="device_list" scroll-y scroll-with-animation >
+  <view  wx:for="{{list}}" wx:for-item="item" 
+         data-title="{{item.deviceId}}" 
+         data-name="{{item.name}}" 
+         data-advertisData="{{item.advertisServiceUUIDs}}" 
+         wx:key="{{item.deviceId}}"
+         bindtap="bindViewTap"
+         class="item" hover-class="item_hover">
+     <view  style="font-size: 16px; color: #333;">{{item.name}}</view>
+     <view  style="font-size: 16px; color: #333;" >{{item.deviceId}}</view>  
+     <view style="font-size: 10px">信号强度: {{item.RSSI}}dBm ({{utils.max(0, item.RSSI + 100)}}%)</view>  
+</view>  
+</scroll-view>
+ 

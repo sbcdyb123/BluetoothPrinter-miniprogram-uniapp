@@ -1,0 +1,7 @@
+<button class='button'  hover-class="hover"  bindtap="blueTooth" > 蓝牙设备 </button>
+<button class='button'  hover-class="hover" hidden="true" bindtap="printTest" > 发送命令</button>
+<button class='button'  hover-class="hover"  bindtap="recipt" > 小票案例</button>
+<button class='button'  hover-class="hover" bindtap="label" > 标签案例</button>
+<button class='button'  hover-class="hover"  bindtap="blueToothNet"> 蓝牙配网</button>
+<button class='button'  hover-class="hover" hidden="true" bindtap="lotteryTicket"> 打印彩票</button>
+

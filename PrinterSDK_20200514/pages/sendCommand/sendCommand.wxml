@@ -1,0 +1,42 @@
+<!--blecontrol.wxml-->
+<view class="body">
+
+	<view>
+		<textarea class="result">{{returnResult}}</textarea>
+	</view>
+	<textarea class="input" bindinput="inputEvent"></textarea>
+
+	<button type="primary" bindtap="sendData">发送(票据可使用)</button>
+
+
+
+
+
+	<view style='margin-top:4%;display: flex;flex-direction: row;'>
+
+		<button type='primary' bindtap='receiptTest' loading='{{isReceiptSend}}' disabled='{{isReceiptSend}}'>票据测试</button>
+
+		<button type='primary' bindtap='labelTest' loading='{{isLabelSend}}' disabled='{{isLabelSend}}'>标签测试</button>
+
+	</view>
+	<view style='margin-top:4%;display: flex;flex-direction: row;'>
+		<button type="primary" bindtap="openAndDraw">打开本地图片</button>
+    <button type="primary" bindtap="process">处理图片</button>
+	</view>
+	<!-- <button style='margin-top:4%' type='primary' bindtap='queryStatus'>查询打印机状态</button> -->
+
+	<!-- <view style='margin-top:4%;display: flex;flex-direction: row;'>
+    <canvas hidden='false' canvas-id='edit_area_canvas' style='width:{{canvasWidth}}px;height:{{canvasHeight}}px'></canvas>
+  </view> -->
+	<view style='margin-top:4%;display: flex;flex-direction: column;'>
+		<canvas canvas-id="canvasIn" class="canvas" style='border:1px solid; width:{{canvasWidth}}px; height:{{canvasHeight}}px'></canvas>
+		<canvas canvas-id="canvasOut" class="canvas" style='border:1px solid; width:{{canvasWidth}}px; height:{{canvasHeight}}px'></canvas>
+	</view>
+
+	<picker style='margin:20px' mode='selector' range='{{buffSize}}' value='{{buffIndex}}' bindchange='buffBindChange'>当前每次发送字节数为(点击可更换)：{{buffSize[buffIndex]}}
+	</picker>
+
+	<picker style='margin:20px' mode='selector' range='{{printNum}}' value='{{printNumIndex}}' bindchange='printNumBindChange'>当前打印份数(点击可更换)：{{printNum[printNumIndex]}}
+	</picker>
+
+</view>

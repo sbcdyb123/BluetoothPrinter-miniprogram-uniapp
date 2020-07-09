@@ -1,0 +1,58 @@
+.button {
+  margin-top: 20px;
+  width: 90%;
+  background-color: #54bec2;
+  color: white;
+  border-radius: 98rpx;
+  background: bg_red;
+}
+ 
+/* 按下变颜色 */
+.hover {
+  background:  #DCDCDC;
+}
+
+.device_list {
+  height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #EEE;
+  border-radius: 5px;
+  width: auto;
+}
+.td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   margin-top: 10px;
+}
+/* .item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+     height: 130rpx;
+     width: 100%;
+} */
+.item{
+ display: block;
+  /* font-family:  Arial, Helvetica, sans-serif;
+  font-size:14px;
+  margin: 0 10px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  background-color:#FFA850; 
+  border-radius: 5px;
+  border-bottom: 2px solid #68BAEA; */
+  border-bottom: 1px solid #EEE;
+  padding: 4px;
+  color: #666;
+}
+.item_hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+.block{
+    display: block;
+    color:#ffffff;
+    padding: 5px;
+}/* pages/bleConnect/bleConnect.wxss */
